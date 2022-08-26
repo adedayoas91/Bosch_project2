@@ -46,5 +46,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://satsession.azurewebsites.net:$PORT/predict
+     -X POST https://flaskbright.azurewebsites.net:$PORT/predict
      #your application name <yourappname>goes here
