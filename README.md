@@ -1,3 +1,5 @@
+Welc# Bosch_project2
+
 Project Objectives
     - Use Trello to map out processes
     - Spreadsheets for project planning
@@ -18,12 +20,12 @@ Steps to achieving task:
                                     <source ~/.<new name>/bin/activate>
 
 - Next install dependencies by running the Makefile with the command <make all>
-<img width="1440" alt="Screenshot 2022-08-26 at 22 43 07" src="https://user-images.githubusercontent.com/47278559/187021746-dd21166d-d21d-403b-b1e0-8088928b4a40.png">
+<img width="1440" alt="Screenshot 2022-08-27 at 16 22 59" src="https://user-images.githubusercontent.com/47278559/187035437-b533c639-e113-45dc-b6e3-568153dc9c8e.png">
 
 - Create a webapp using the command <az webapp up --name <webapp-name> --resource-group <resource-group-name> --runtime "PYTHON:<version>">
-   In my own case, I have used webapp-name == "flaskbri";
+   In my own case, I have used webapp-name == "bright-services";
                                resource-group-name == "Azuredevops";
-                               version == 3.7
+                               version == 3.9
    The result can be seen as shown below
 <img width="1440" alt="Screenshot 2022-08-27 at 02 09 00" src="https://user-images.githubusercontent.com/47278559/187021941-1fa901ec-c284-4e7f-ae9e-e59b0358e04d.png">
 
@@ -31,25 +33,78 @@ Steps to achieving task:
   We start by creating a new workflow in the Github repo. This can be done by clicking on Actions menu and then "Set up a workflow yourself"
     It is noteworthy that a starter code has been provided which includes the script to put in the workflow .yml file and named pythonapp.yml
     After successfully making the file commit the changes and then run the build session and the following result should be achieved. 
-Notably, the green tick indicate the integration build successfully and all codes are running fine. However, a slight change is required in the stater script for the pythonapp.yml to build successfully. This involve upgrading the python version in the script to any other version aside version == 3.5
+Notably, the green tick indicate the integration build successfully and all codes are running fine. However, a slight change is required in the stater script for the pythonapp.yml to build successfully. This involves upgrading the python version in the script to any other version aside version == 3.5
 <img width="1440" alt="Screenshot 2022-08-26 at 22 48 43" src="https://user-images.githubusercontent.com/47278559/187022274-54fa822c-2040-4698-9709-34d0507fcde1.png">
 
 - After creating the webapp.
-> I have had various issues getting it to work; after various complaints, unanswered questions and enormous debugging, I am hoping I can get a better response to my problems through the submission review. 
-> here is my current stand.
-  > I have created the webapp as shown above and have managed to start it from the portal below, indicating the app status is running. 
-<img width="1440" alt="Screenshot 2022-08-27 at 10 47 52" src="https://user-images.githubusercontent.com/47278559/187022892-12dc166e-77a7-4df9-94b6-17ae5970a49a.png">
+  > I have created the webapp with the above specifications and checked the URL to see if its running. Below showed the expected result
+<img width="1440" alt="Screenshot 2022-08-27 at 16 36 54" src="https://user-images.githubusercontent.com/47278559/187035831-12f312e4-0afa-490a-af2e-0ae30f8b8375.png">
 
- > That been the case, I ran the URL of the webapp <https://flaskbri.azurewebsites.net>, Its surprisingly never working as shown with the error.
-<img width="1440" alt="Screenshot 2022-08-27 at 10 50 18" src="https://user-images.githubusercontent.com/47278559/187022974-80a35222-c868-4ab1-9941-ebbf988c9f70.png">
- > I had taken the initiative to diagnose it from the portal and hopefully solve the problems, however, I am not able to. 
-INDEED I THOUGHT I WAS RESTRICTED BECAUSE I AM USING A PRIVATE ACCOUNT, AFTER HAVING SO MANY ISSUES TO ACCESS THE LAB, FINALLY WHEN I DID, THE SAME ISSUES OF DIAGNOSIS WAS RAISED, WHICH INDICATED THAT ITS NOT ABOUT THE SUBSCRIPTION OR CREDENTIALS. AND YES, ITS EXACTLY THE SAME PROBLEMS THAT THE DIAGNOSIS RETURNED EVEN AFTER SWITCHING TO THE UDACITY CREDENTIALS.
-<img width="1440" alt="Screenshot 2022-08-27 at 10 55 12" src="https://user-images.githubusercontent.com/47278559/187023127-cb07c0e0-7a51-45cf-b93e-dab810ce6cc6.png">
- 
- > Out of curiosity, I tried to make predictions and this is the error that was returned. Also I have changed the URL in the make_predict_azure_app.sh.  
-<img width="1440" alt="Screenshot 2022-08-27 at 11 32 25" src="https://user-images.githubusercontent.com/47278559/187024368-b6f3e078-94ea-499a-b192-e2c52b4a1a0f.png">
+ > Then proceed to make prediction by running <./make_predict_azure_app.sh> and the prediction based on the model used can be shown in the following image
+<img width="1440" alt="Screenshot 2022-08-27 at 16 40 00" src="https://user-images.githubusercontent.com/47278559/187035959-5bda29b4-dfe3-4cdc-9be8-1eded3543c6c.png">
+`2022-08-27T15:06:42  Welcome, you are now connected to log-streaming service.
+
+Starting Log Tail -n 10 of existing logs ----
+
+/home/LogFiles/__lastCheckTime.txt  (https://bright-services.scm.azurewebsites.net/api/vfs/LogFiles/__lastCheckTime.txt)
+08/27/2022 14:36:18
+
+/home/LogFiles/kudu/trace/769ceae5243b-5c51755b-6f28-4485-98b4-00f71f667703.txt  (https://bright-services.scm.azurewebsites.net/api/vfs/LogFiles/kudu/trace/769ceae5243b-5c51755b-6f28-4485-98b4-00f71f667703.txt)
+2022-08-27T14:30:43  Startup Request, url: /api/zipdeploy?isAsync=true, method: POST, type: request, pid: 65,1,5, SCM_DO_BUILD_DURING_DEPLOYMENT: True, ScmType: None
+
+/home/LogFiles/2022_08_27_10-30-0-12_default_docker.log  (https://bright-services.scm.azurewebsites.net/api/vfs/LogFiles/2022_08_27_10-30-0-12_default_docker.log)
+2022-08-27T14:36:47.333267422Z 169.254.130.1 - - [27/Aug/2022:14:36:47 +0000] "GET /favicon.ico HTTP/1.1" 404 207 "https://bright-services.azurewebsites.net/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
 
 
-- With this final step to completing this task, I will like to get clarifications on what I could have or that I am doing wrong that gave rise  to this error recurrently. 
+2022-08-27T14:39:36.442669515Z /tmp/8da8838bd7c5026/antenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator LinearRegression from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+2022-08-27T14:39:36.442721216Z https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+2022-08-27T14:39:36.442730716Z   warnings.warn(
+2022-08-27T14:39:36.444341838Z [2022-08-27 14:39:36,443] INFO in app: JSON payload: %s json_payload
+2022-08-27T14:39:36.462030982Z [2022-08-27 14:39:36,460] INFO in app: inference payload DataFrame: %s inference_payload
+2022-08-27T14:39:36.466075238Z [2022-08-27 14:39:36,460] INFO in app: Scaling Payload: %s payload
+2022-08-27T14:39:36.502926347Z 169.254.130.1 - - [27/Aug/2022:14:39:36 +0000] "POST /predict HTTP/1.1" 200 36 "-" "curl/7.84.0"
 
-Best
+/home/LogFiles/2022_08_27_10-30-0-12_docker.log  (https://bright-services.scm.azurewebsites.net/api/vfs/LogFiles/2022_08_27_10-30-0-12_docker.log)
+2022-08-27T14:36:19.980Z INFO  - Starting container for site
+2022-08-27T14:36:19.982Z INFO  - docker run -d --expose=8000 --name bright-services_0_174c9243 -e WEBSITE_SITE_NAME=bright-services -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=bright-services.azurewebsites.net -e WEBSITE_INSTANCE_ID=d48e7722c44716b2d3b260fd39937cd26b4df2c1aad200418e83e1648d9c8bd5 -e HTTP_LOGGING_ENABLED=1 -e WEBSITE_USE_DIAGNOSTIC_SERVER=False appsvc/python:3.9_20220315.5  
+
+2022-08-27T14:36:22.788Z INFO  - Initiating warmup request to container bright-services_0_174c9243 for site bright-services
+2022-08-27T14:36:46.029Z INFO  - Container bright-services_0_174c9243 for site bright-services initialized successfully and is ready to serve requests.
+
+
+/home/LogFiles/AppServiceAppLogs_Feature_Installer/startup_0.log  (https://bright-services.scm.azurewebsites.net/api/vfs/LogFiles/AppServiceAppLogs_Feature_Installer/startup_0.log)
+2022-08-27 14:36:35,355  [MainThread] [DEBUG] : Initializating AppServiceAppLogging 
+2022-08-27 14:36:35,356  [Thread-1  ] [DEBUG] : Did not find any previously bound socket
+2022-08-27 14:36:35,362  [MainThread] [DEBUG] : Initialized AppServiceAppLogging
+2022-08-27 14:36:43,424  [Thread-3  ] [DEBUG] : Waiting for the logs flag to be set
+
+
+/home/LogFiles/CodeProfiler/d48e77_debug.log  (https://bright-services.scm.azurewebsites.net/api/vfs/LogFiles/CodeProfiler/d48e77_debug.log)
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [INFO] Code Profiler Installer is starting up
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [INFO] Cleaning up any existing status file which indicated signal handlers initialized status
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [DEBUG] APPSETTING_WEBSITE_ENABLE_DEFAULT_CODE_PROFILER : None
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [INFO] Attempting to install the default code profiler.
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [DEBUG] viztracer would save traces to /tmp/d48e77_profiler_trace.json
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [INFO] Successfully installed code profiler.
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [INFO] Signal Handlers SIGUSR for needed code-profiler have been initialized for gunicorn process on instance d48e7722c44716b2d3b260fd39937cd26b4df2c1aad200418e83e1648d9c8bd5
+[2022_08_27_14_36_43] [appsvc_profiler.installer] [DEBUG] Code Profiler Installer is exiting as installation is completed
+
+
+Ending Log Tail of existing logs ---
+
+Starting Live Log Stream ---
+2022-08-27T14:36:19.980Z INFO  - Starting container for site
+
+2022-08-27T14:36:19.982Z INFO  - docker run -d --expose=8000 --name bright-services_0_174c9243 -e WEBSITE_SITE_NAME=bright-services -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=bright-services.azurewebsites.net -e WEBSITE_INSTANCE_ID=d48e7722c44716b2d3b260fd39937cd26b4df2c1aad200418e83e1648d9c8bd5 -e HTTP_LOGGING_ENABLED=1 -e WEBSITE_USE_DIAGNOSTIC_SERVER=False appsvc/python:3.9_20220315.5  
+
+
+
+2022-08-27T14:36:22.788Z INFO  - Initiating warmup request to container bright-services_0_174c9243 for site bright-services
+
+2022-08-27T14:36:46.029Z INFO  - Container bright-services_0_174c9243 for site bright-services initialized successfully and is ready to serve requests.
+`
+   
+- A snapshot of the last part of the log is shown below
+<img width="1440" alt="Screenshot 2022-08-27 at 17 07 32" src="https://user-images.githubusercontent.com/47278559/187036066-acd5f892-f08a-4af1-bccb-b0230cf62dc7.png">
+
+That ended the process of the task and documentations including Trello board and Spreasheet as well as the README were updated.
