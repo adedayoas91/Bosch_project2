@@ -103,7 +103,8 @@ Starting Live Log Stream ---
 
 2022-08-27T14:36:46.029Z INFO  - Container bright-services_0_174c9243 for site bright-services initialized successfully and is ready to serve requests.
 `
-   A snapshot of the last part of the log is shown below
+   
+- A snapshot of the last part of the log is shown below
 <img width="1440" alt="Screenshot 2022-08-27 at 17 07 32" src="https://user-images.githubusercontent.com/47278559/187036066-acd5f892-f08a-4af1-bccb-b0230cf62dc7.png">
 
 That ended the process of the task and documentations including Trello board and Spreasheet as well as the README were updated.
