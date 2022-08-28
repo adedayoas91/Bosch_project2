@@ -1,4 +1,4 @@
-# Bosch_project2
+## Bosch_project2
 
 Project Objectives
     - Use Trello to map out processes
@@ -113,5 +113,7 @@ Starting Live Log Stream ---
 
 - Proceed to Configure the azure pipelines as described in the [documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
 
-
-That ended the process of the task and documentation process, including the Trello board and Spreadsheet, and the README was updated.
+- That ended the process of the task and documentation process, including the Trello board and Spreadsheet, and the README was updated.
+Click [here](https://trello.com/b/VNWPOlIf/to-do)to view the workflow Trello
+Click [here](https://docs.google.com/spreadsheets/d/1FjNlNgm0SfMknYug1v7eJzQ2GBJOGoPPpXxUvH1ZeoQ/edit?usp=sharing) to see the workflow spreadsheet
+Click here to access the video demo required.
