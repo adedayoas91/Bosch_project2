@@ -67,7 +67,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool:
-      vmImage: $(vmImageName)
+      vmImage: Default
     environment: $(environmentName)
     strategy:
       runOnce:
