@@ -1,4 +1,4 @@
-## Bosch_project2
+## Bosch_project2 documentation
 
 Project Objectives
     - Use Trello to map out processes
