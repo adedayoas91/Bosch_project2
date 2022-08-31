@@ -112,6 +112,10 @@ Starting Live Log Stream ---
 <img width="1440" alt="Screenshot 2022-08-28 at 15 50 15" src="https://user-images.githubusercontent.com/47278559/187078650-f0fc2a0c-a8bf-4911-8879-d7f10df050f9.png">
 
 - Proceed to Configure the azure pipelines as described in the [documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
+![Screenshot (202)](https://user-images.githubusercontent.com/47278559/187690827-6cc39784-e511-4bea-9442-a75ccfa8827a.png)
+
+- Also the github repo passed the build as well as shown in the image below
+![Screenshot (203)](https://user-images.githubusercontent.com/47278559/187691020-1b1324d3-1ecb-4ba3-b780-2a068f58310c.png)
 
 - That ended the process of the task and documentation process, including the Trello board and Spreadsheet, and the README was updated.
    - Click [here](https://trello.com/b/VNWPOlIf/to-do) to view the workflow Trello
