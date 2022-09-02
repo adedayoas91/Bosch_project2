@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'b972e2b8-0b30-44fb-bcf8-2a1d7efd5c4a'
+  azureServiceConnectionId: 'a2b6c0b6-d361-4a5a-b439-8f214dede030'
 
   # Web app name
   webAppName: 'bright-services'

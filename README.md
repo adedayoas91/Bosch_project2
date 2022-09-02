@@ -1,4 +1,4 @@
-Welc# Bosch_project2
+## Bosch_project2 documentation
 
 Project Objectives
     - Use Trello to map out processes
@@ -33,7 +33,7 @@ Steps to achieving task:
   We start by creating a new workflow in the Github repo. This can be done by clicking on Actions menu and then "Set up a workflow yourself"
     It is noteworthy that a starter code has been provided which includes the script to put in the workflow .yml file and named pythonapp.yml
     After successfully making the file commit the changes and then run the build session and the following result should be achieved. 
-Notably, the green tick indicate the integration build successfully and all codes are running fine. However, a slight change is required in the stater script for the pythonapp.yml to build successfully. This involves upgrading the python version in the script to any other version aside version == 3.5
+     - Notably, the green tick indicate the integration build successfully and all codes are running fine. However, a slight change is required in the stater script for the pythonapp.yml to build successfully. This involves upgrading the python version in the script to any other version aside version == 3.5
 <img width="1440" alt="Screenshot 2022-08-26 at 22 48 43" src="https://user-images.githubusercontent.com/47278559/187022274-54fa822c-2040-4698-9709-34d0507fcde1.png">
 
 - After creating the webapp.
@@ -42,7 +42,8 @@ Notably, the green tick indicate the integration build successfully and all code
 
  > Then proceed to make prediction by running <./make_predict_azure_app.sh> and the prediction based on the model used can be shown in the following image
 <img width="1440" alt="Screenshot 2022-08-27 at 16 40 00" src="https://user-images.githubusercontent.com/47278559/187035959-5bda29b4-dfe3-4cdc-9be8-1eded3543c6c.png">
-`2022-08-27T15:06:42  Welcome, you are now connected to log-streaming service.
+
+```2022-08-27T15:06:42  Welcome, you are now connected to log-streaming service.
 
 Starting Log Tail -n 10 of existing logs ----
 
@@ -102,9 +103,21 @@ Starting Live Log Stream ---
 2022-08-27T14:36:22.788Z INFO  - Initiating warmup request to container bright-services_0_174c9243 for site bright-services
 
 2022-08-27T14:36:46.029Z INFO  - Container bright-services_0_174c9243 for site bright-services initialized successfully and is ready to serve requests.
-`
-   
-- A snapshot of the last part of the log is shown below
+````
+
+-  A snapshot of the log footage as shown in the CLI is shown below
 <img width="1440" alt="Screenshot 2022-08-27 at 17 07 32" src="https://user-images.githubusercontent.com/47278559/187036066-acd5f892-f08a-4af1-bccb-b0230cf62dc7.png">
 
-That ended the process of the task and documentations including Trello board and Spreasheet as well as the README were updated.
+- After committing all changes to Github, I ran the Github actions build, and all build was successful
+<img width="1440" alt="Screenshot 2022-08-28 at 15 50 15" src="https://user-images.githubusercontent.com/47278559/187078650-f0fc2a0c-a8bf-4911-8879-d7f10df050f9.png">
+
+- Proceed to Configure the azure pipelines as described in the [documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
+![Screenshot (202)](https://user-images.githubusercontent.com/47278559/187690827-6cc39784-e511-4bea-9442-a75ccfa8827a.png)
+
+- Also the github repo passed the build as well as shown in the image below
+![Screenshot (203)](https://user-images.githubusercontent.com/47278559/187691020-1b1324d3-1ecb-4ba3-b780-2a068f58310c.png)
+
+- That ended the process of the task and documentation process, including the Trello board and Spreadsheet, and the README was updated.
+   - Click [here](https://trello.com/b/VNWPOlIf/to-do) to view the workflow Trello
+   - Click [here](https://docs.google.com/spreadsheets/d/1FjNlNgm0SfMknYug1v7eJzQ2GBJOGoPPpXxUvH1ZeoQ/edit?usp=sharing) to see the workflow spreadsheet
+   - Click here to access the video demo required.
