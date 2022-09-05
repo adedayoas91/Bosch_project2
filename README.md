@@ -111,10 +111,16 @@ Starting Live Log Stream ---
 - After committing all changes to Github, I ran the Github actions build, and all build was successful
 <img width="1440" alt="Screenshot 2022-08-28 at 15 50 15" src="https://user-images.githubusercontent.com/47278559/187078650-f0fc2a0c-a8bf-4911-8879-d7f10df050f9.png">
 
+- Performance validation of the webapp can be performed via a load test using [locust](https://locust.io/). 
+To run the locustfile.py, please edit the Host URL to include the webapp that is been tested.
+A screenshot of the results of the testing is attached below
+<img width="1440" alt="Screenshot 2022-09-03 at 19 23 27" src="https://user-images.githubusercontent.com/47278559/188506380-d5272805-fe6b-4e21-9214-15e82ed61a73.png">
+
+
 - Proceed to Configure the azure pipelines as described in the [documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
 ![Screenshot (202)](https://user-images.githubusercontent.com/47278559/187690827-6cc39784-e511-4bea-9442-a75ccfa8827a.png)
 
-- Also the github repo passed the build as well as shown in the image below
+- Also the github repo passed the build as well as shown in the image below and can be verified via this [link](https://github.com/adedayoas91/Bosch_project2)
 ![Screenshot (203)](https://user-images.githubusercontent.com/47278559/187691020-1b1324d3-1ecb-4ba3-b780-2a068f58310c.png)
 
 - That ended the process of the task and documentation process, including the Trello board and Spreadsheet, and the README was updated.
