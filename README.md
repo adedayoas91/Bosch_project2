@@ -1,5 +1,7 @@
 ## Bosch_project2 documentation
 
+[![Python application test with Github Actions](https://github.com/adedayoas91/Bosch_project2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/adedayoas91/Bosch_project2/actions/workflows/pythonapp.yml)
+
 Project Objectives
     - Use Trello to map out processes
     - Spreadsheets for project planning
