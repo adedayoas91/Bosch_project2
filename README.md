@@ -25,7 +25,7 @@ Steps to achieving task:
 <img width="1440" alt="Screenshot 2022-08-27 at 16 22 59" src="https://user-images.githubusercontent.com/47278559/187035437-b533c639-e113-45dc-b6e3-568153dc9c8e.png">
 
 - Create a webapp using the command <az webapp up --name <webapp-name> --resource-group <resource-group-name> --runtime "PYTHON:<version>">
-   In my own case, I have used webapp-name == "bright-services";
+   In my own case, I have used webapp-name == "bright-services"; "this is to bechecked"
                                resource-group-name == "Azuredevops";
                                version == 3.9
    The result can be seen as shown below
