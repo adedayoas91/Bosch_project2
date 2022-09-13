@@ -2,6 +2,9 @@
 
 [![Python application test with Github Actions](https://github.com/adedayoas91/Bosch_project2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/adedayoas91/Bosch_project2/actions/workflows/pythonapp.yml)
 
+Project architecture is detailed as follows
+<img width="894" alt="Screenshot 2022-09-10 at 18 28 44" src="https://user-images.githubusercontent.com/47278559/189492758-a77b511c-6ea9-489d-a508-30a38f94c7d9.png">
+
 Project Objectives
     - Use Trello to map out processes
     - Spreadsheets for project planning
