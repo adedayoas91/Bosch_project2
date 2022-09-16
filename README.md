@@ -133,6 +133,6 @@ A screenshot of the results of the testing is attached below
 ![Screenshot (203)](https://user-images.githubusercontent.com/47278559/187691020-1b1324d3-1ecb-4ba3-b780-2a068f58310c.png)
 
 - That ended the process of the task and documentation process, including the Trello board and Spreadsheet, and the README was updated.
-   - Click [here](https://trello.com/b/VNWPOlIf/to-do) to view the workflow Trello
+   - Click [here](https://trello.com/b/VNWPOlIf/to-do](https://trello.com/invite/b/VNWPOlIf/2a11423c61ed3b817fd5173e2171c765/boschproject2) to view the workflow Trello
    - Click [here](https://docs.google.com/spreadsheets/d/1FjNlNgm0SfMknYug1v7eJzQ2GBJOGoPPpXxUvH1ZeoQ/edit?usp=sharing) to see the workflow spreadsheet
    - Click [here](https://youtu.be/xvctqRk8luo) to access the video demo required.
