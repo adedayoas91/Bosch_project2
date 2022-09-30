@@ -49,7 +49,7 @@ Steps to achieving task:
 <img width="1440" alt="Screenshot 2022-08-27 at 16 36 54" src="https://user-images.githubusercontent.com/47278559/187035831-12f312e4-0afa-490a-af2e-0ae30f8b8375.png">
 
  > Then proceed to predict by running <./make_predict_azure_app.sh>, and the prediction based on the model used can be shown in the following image
-<img width="1440" alt="Screenshot 2022-08-27 at 16 40 00" src="https://user-images.githubusercontent.com/47278559/187035959-5bda29b4-dfe3-4cdc-9be8-1eded3543c6c.png">
+<img width="1440" alt="Screenshot 2022-08-27 at 16 40 00" src="https://user-images.githubusercontent.com/47278559/187035959-5bda29b4-dfe3-4cdc-9be8-1eded3543c6c.png"> # this is a change
 
 > Results from the locust test carried out can be seen in the attached screenshot. 
 <img width="1440" alt="Screenshot 2022-09-15 at 20 26 51" src="https://user-images.githubusercontent.com/47278559/190486470-5d0b5b3d-e578-46ae-a3e8-bb249c79cb90.png">
